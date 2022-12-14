@@ -1,0 +1,342 @@
+* {
+  font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: fixed;
+}
+header > .container {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .container > .left {
+  padding: 0 0 0 30px;
+}
+header > .container > .left > .menuIcon {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+}
+header > .container > .left > .menuIcon:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+header > .container > .left > img {
+  cursor: pointer;
+}
+header > .container > .left > img:nth-child(2) {
+  position: relative;
+  top: -12px;
+}
+header > .container > .left > span {
+  font-size: 13px;
+  position: absolute;
+}
+header > .container > .middle {
+  display: flex;
+  align-items: center;
+}
+header > .container > .middle > input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px 0 0 30px;
+  width: 30vw;
+  border: 1px solid rgb(115, 115, 115);
+  border-right: 0;
+}
+header > .container > .middle > button {
+  border-radius: 0 30px 30px 0;
+  padding: 6px 20px 5px 20px;
+  border: 1px solid rgb(115, 115, 115);
+  cursor: pointer;
+}
+header > .container > .middle > button:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+header > .container > .middle > img {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.01);
+  cursor: pointer;
+}
+header > .container > .middle > img:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+header > .container > .right {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > .container > .right > img {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header > .container > .right > img:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+header > .container > .right > span {
+  background-color: rgb(19, 83, 50);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50%;
+  padding: 10px 15px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+section.right {
+  width: calc(100vw - 300px);
+  float: right;
+}
+
+.secondary-header {
+  position: relative;
+  display: fixed;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.secondary-header > .right-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  right: 0;
+  background: linear-gradient(270deg, #FFFFFF 0%, #FFFFFF 67.1%, rgba(255, 255, 255, 0) 103.9%);
+  height: 100%;
+  width: 100px;
+}
+.secondary-header > .right-arrow > img {
+  margin-right: 20px;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.secondary-header > .right-arrow > img:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.secondary-header > .left-arrow {
+  position: absolute;
+  display: none;
+  justify-content: left;
+  align-items: center;
+  left: 0;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 67.1%, rgba(255, 255, 255, 0) 103.9%);
+  height: 100%;
+  width: 100px;
+}
+.secondary-header > .left-arrow > img {
+  margin-left: 20px;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.secondary-header > .left-arrow > img:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.secondary-header > .container {
+  display: flex;
+  overflow: hidden;
+  gap: 10px;
+  padding-right: 80px;
+  scroll-behavior: smooth;
+}
+.secondary-header > .container > button {
+  border: 0;
+  border-radius: 10px;
+  padding: 8px 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  white-space: nowrap;
+  float: left;
+  cursor: pointer;
+}
+.secondary-header > .container > button:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.secondary-header > .container > button.active {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.main-workspace {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 30px 40px 0 40px;
+  margin-right: 5px;
+  height: 88vh;
+  row-gap: 40px;
+  overflow-y: scroll;
+}
+.main-workspace::-webkit-scrollbar {
+  width: 8px;
+}
+.main-workspace::-webkit-scrollbar-track {
+  background: transparent;
+}
+.main-workspace::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main-workspace::-webkit-scrollbar-thumb:hover {
+  background: rgb(65, 65, 65);
+}
+.main-workspace > .card {
+  width: 350px;
+  cursor: pointer;
+}
+.main-workspace > .card > .thumbnail {
+  position: relative;
+}
+.main-workspace > .card > .thumbnail > img {
+  width: 100%;
+}
+.main-workspace > .card > .thumbnail > .time {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.main-workspace > .card > .bottom {
+  display: flex;
+  gap: 10px;
+}
+.main-workspace > .card > .bottom > img {
+  height: 40px;
+}
+.main-workspace > .card > .bottom > .content {
+  display: flex;
+  flex-direction: column;
+}
+.main-workspace > .card > .bottom > .content > .heading {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.main-workspace > .card > .bottom > .content > .channelName {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-workspace > .card > .bottom > .content > .bottom {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-workspace > .card > .bottom > .content > .bottom > span {
+  position: relative;
+  bottom: 7px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.short-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  height: 93vh;
+  width: 70px;
+}
+.short-nav > .menu_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 70px;
+  font-size: 11px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.short-nav > .menu_item:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.expanded-nav {
+  display: block;
+  height: 93vh;
+  width: 270px;
+  overflow-y: hidden;
+  float: left;
+}
+.expanded-nav > .menu_item {
+  font-size: 14px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  width: 90%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.expanded-nav > .menu_item:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+.expanded-nav > .active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.expanded-nav > .heading {
+  font-size: 16px;
+  margin-left: 5%;
+  padding: 10px 12px;
+  padding-bottom: 5px;
+}
+.expanded-nav > hr {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+.expanded-nav::-webkit-scrollbar {
+  width: 8px;
+}
+.expanded-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+.expanded-nav::-webkit-scrollbar-thumb {
+  background: rgb(164, 164, 164);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.expanded-nav::-webkit-scrollbar-thumb:hover {
+  background: rgb(131, 131, 131);
+}
+.expanded-nav > .links {
+  padding: 10px 12px;
+  margin-left: 5%;
+  width: 80%;
+}
+.expanded-nav > .links > a {
+  color: rgb(96, 96, 96);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.expanded-nav > .links > .space {
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+.expanded-nav > .copyright {
+  padding: 10px 12px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  font-size: 12px;
+  color: rgb(144, 144, 144);
+}

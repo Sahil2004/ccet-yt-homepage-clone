@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="shortcut icon" href="./assets/images/premium.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <img src="./assets/images/hamburger-menu.svg" alt="menu" class="menuIcon" onclick="toggleNav()">
+                <img src="./assets/images/logo.svg" alt="Youtube Home">
+                <span>IN</span>
+            </div>
+            <div class="middle">
+                <input type="text" placeholder="Search">
+                <button>
+                    <img src="./assets/images/search.svg" alt="Search">
+                </button>
+                <img src="./assets/images/mic.svg" alt="Search with your voice">
+            </div>
+            <div class="right">
+                <img src="./assets/images/create.svg" alt="Create">
+                <img src="./assets/images/notifications.svg" alt="Notifications">
+                <span>S</span>
+            </div>
+        </div>
+    </header>
+    <section class="right" id="right">
+        <div class="secondary-header">
+            <div class="right-arrow" id="rightArrow">
+                <img src="./assets/images/right.svg" alt="Right" onclick="moveRight()">
+            </div>
+            <div class="left-arrow" id="leftArrow">
+                <img src="./assets/images/left.svg" alt="Left" onclick="moveLeft()">
+            </div>
+            <div class="container" id="horizontalScrolling">
+                <button class="active">
+                    All
+                </button>
+                <button>
+                    Music
+                </button>
+                <button>
+                    Mixes
+                </button>
+                <button>
+                    JavaScript
+                </button>
+                <button>
+                    Computer Programming
+                </button>
+                <button>
+                    Auditions
+                </button>
+                <button>
+                    Apple
+                </button>
+                <button>
+                    Samsung
+                </button>
+                <button>
+                    Microsoft Windows
+                </button>
+                <button>
+                    Physics
+                </button>
+                <button>
+                    Podcasts
+                </button>
+                <button>
+                    Motivation
+                </button>
+                <button>
+                    Gaming
+                </button>
+                <button>
+                    Drawing
+                </button>
+                <button>
+                    Recently Uploaded
+                </button>
+                <button>
+                    Cars
+                </button>
+            </div>
+        </div>
+        <div class="main-workspace" id="mainWorkspace">
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">
+                    <img src="./assets/thumbnail.webp">
+                    <div class="time">16:50</div>
+                </div>
+                <div class="bottom">
+                    <img src="./assets/channelIcon.jpg">
+                    <div class="content">
+                        <div class="heading">
+                            Speed Up Your React Apps With Code Splitting
+                        </div>
+                        <div class="channelName">
+                            Web Dev Simplified
+                        </div>
+                        <div class="bottom">
+                            <div class="views">
+                                8.8k views
+                            </div>
+                            <span>
+                                .
+                            </span>
+                            <div class="time">
+                                3 hours ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="short-nav" id="shortNav">
+        <div class="menu_item">
+            <img src="./assets/images/home.svg" alt="Home" />
+            <span>Home</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/shorts.svg" alt="Shorts" />
+            <span>Shorts</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/subscriptions.svg" alt="Subscriptions" />
+            <span>Subscriptions</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/library.svg" alt="Library" />
+            <span>Library</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/downloads.svg" alt="Downloads" />
+            <span>Downloads</span>
+        </div>
+    </nav>
+    <nav class="expanded-nav" id="expandedNav" onmouseenter="showScrollbar(this)" onmouseleave="hideScrollbar(this)">
+        <div class="menu_item active">
+            <img src="./assets/images/home.svg" alt="Home" />
+            <span>Home</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/shorts.svg" alt="Shorts" />
+            <span>Shorts</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/subscriptions.svg" alt="Subscriptions" />
+            <span>Subscriptions</span>
+        </div>
+        <hr />
+        <div class="menu_item">
+            <img src="./assets/images/library.svg" alt="Library" />
+            <span>Library</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/history.svg" alt="History" />
+            <span>History</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/your-videos.svg" alt="Your Videos" />
+            <span>Your videos</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/watch-later.svg" alt="Watch Later" />
+            <span>Watch later</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/downloads.svg" alt="Downloads" />
+            <span>Downloads</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/liked.svg" alt="Liked videos" />
+            <span>Liked videos</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/show-more.svg" alt="Show more" />
+            <span>Show more</span>
+        </div>
+        <hr />
+        <div class="heading">
+            Explore
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/trending.svg" alt="Trending" />
+            <span>Trending</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/music.svg" alt="Music" />
+            <span>Music</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/movies.svg" alt="Movies" />
+            <span>Movies</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/live.svg" alt="Live" />
+            <span>Live</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/gaming.svg" alt="Gaming" />
+            <span>Gaming</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/news.svg" alt="News" />
+            <span>News</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/sports.svg" alt="Sports" />
+            <span>Sports</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/learning.svg" alt="Learning" />
+            <span>Learning</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/fashion.svg" alt="Fashion & Beauty" />
+            <span>Fashion & Beauty</span>
+        </div>
+        <hr />
+        <div class="heading">
+            More from YouTube
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/premium.svg" alt="Youtube Premium" />
+            <span>Youtube Premium</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/creator.svg" alt="Creator Studio" />
+            <span>Creator Studio</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/yt-music.svg" alt="Youtube Music" />
+            <span>Youtube Music</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/kids.svg" alt="Youtube Kids" />
+            <span>Youtube Kids</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/tv.svg" alt="Youtube TV" />
+            <span>Youtube TV</span>
+        </div>
+        <hr />
+        <div class="menu_item">
+            <img src="./assets/images/settings.svg" alt="Settings" />
+            <span>Settings</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/report.svg" alt="Report history" />
+            <span>Report history</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/help.svg" alt="Help" />
+            <span>Help</span>
+        </div>
+        <div class="menu_item">
+            <img src="./assets/images/feedback.svg" alt="Send feedback" />
+            <span>Send feedback</span>
+        </div>
+        <hr />
+        <div class="links">
+            <a href="https://www.youtube.com/about/">About</a>
+            <a href="https://www.youtube.com/about/press/">Press</a>
+            <a href="https://www.youtube.com/about/copyright/">Copyright</a>
+            <br>
+            <a href="https://www.youtube.com/t/contact_us">Contact us</a>
+            <a href="https://www.youtube.com/creators">Creators</a>
+            <a href="https://www.youtube.com/ads">Advertise</a>
+            <a href="https://developers.google.com/youtube">Developers</a>
+            <span class="space"></span>
+            <a href="https://www.youtube.com/t/terms">Terms</a>
+            <a href="https://www.youtube.com/t/privacy">Privacy</a>
+            <a href="https://www.youtube.com/about/policies/">Policy & Safety</a>
+            <br>
+            <a href="https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&amp;utm_source=ythp&amp;utm_medium=LeftNav&amp;utm_content=txt&amp;u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen">How YouTube works</a>
+            <br>
+            <a href="https://www.youtube.com/new">Test new features</a>
+        </div>
+        <div class="copyright">
+            © 2022 Google LLC
+        </div>
+    </nav>
+</body>
+</html>
